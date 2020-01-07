@@ -4,19 +4,24 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Navbar from "./components/navbar"
-import ExercisesList from "./components/exercises-list";
-import EditExercise from "./components/edit-exercise";
-import CreateExercise from "./components/create-exercise";
-import CreateUser from "./components/create-user";
+import ExercisesList from "./components/ExercisesList";
+import EditExercise from "./components/EditExercise";
+import CreateExercise from "./components/CreateExercise";
+import CreateUsers from "./components/CreateUsers";
 
 
 function App() {
   return (
-    <router>
-    <div className="container">
-      Fitness Tracker
-    </div>
-    </router>
+    <Router>
+      <div className="container">
+      <Navbar />
+      <br/>
+      <Route path="/" exact component={ExercisesList} />
+      <Route path="/edit/:id" component={EditExercise} />
+      <Route path="/create" component={CreateExercise} />
+      <Route path="/user" component={CreateUsers} />
+      </div>
+    </Router>
   );
 }
 
