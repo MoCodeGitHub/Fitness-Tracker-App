@@ -6,3 +6,10 @@
 ![createlogs](https://user-images.githubusercontent.com/34093736/72020930-26ae4280-326d-11ea-997c-aade52ac2755.png)
 
 ![createusers](https://user-images.githubusercontent.com/34093736/72020950-30d04100-326d-11ea-9d4b-b213d1f40b27.png)
+
+
+# What I learned
+
+* How to use routes, schemas and commponents to attach a React Frontend to a backend powered by MongoDB Atlas, Express, NodeJS and Mongoose.
+* How to use Insomnia to test different features of the app.
+* How to pass dynamic information into components with props.
