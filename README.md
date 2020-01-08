@@ -10,6 +10,6 @@
 
 # What I learned
 
-* How to use routes, schemas and commponents to attach a React Frontend to a backend powered by MongoDB Atlas, Express, NodeJS and Mongoose.
+* How to use routes, schemas and components to attach a React Frontend to a backend powered by MongoDB Atlas, Express, NodeJS and Mongoose.
 * How to use Insomnia to test different features of the app.
 * How to pass dynamic information into components with props.
