@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 export default class CreateUsers extends Component {
     constructor(props) {
@@ -23,15 +24,17 @@ onSubmit(e){
     
     const users = {
         username: this.state.username
-
-    }
-
-console.log(users);
-
-    this.setState({
-      username: ''
-    })
-  }
+      }
+  
+      console.log(users);
+  
+      axios.post('http://localhost:5000/users/add', users)
+        .then(res => console.log(res.data));
+  
+      this.setState({
+        username: ''
+      })
+}
 
 
 
