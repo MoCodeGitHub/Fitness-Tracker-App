@@ -12,9 +12,44 @@ export default class CreateExercise extends Component {
             users: []
 
         } 
-
-        }
     }
+    
+
+onChangeusername(e){
+    this.setState {
+        username: e.target.value
+     });
+     
+onChangedescription(e){
+    this.setState {
+        description: e.target.value
+     });
+
+onChangeduration(e){
+    this.setState {
+        duration: e.target.value
+     });
+
+onChangedate(date){
+    this.setState {
+        date: date
+     });
+
+onsubmit(e){
+    e.preventDefault();
+
+    const exercise = {
+        username: this.state.username,
+        description: this.state.description,
+        duration: this.state.duration,
+        date: this.state.date
+
+        console.log(excercise)
+
+        window.location = '/';
+    }
+}
+
     render (){
         return (
            <div>
